@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Contests - American Mathematics Competitions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>AMC</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="amc8-materials.html" class="nav-link">AMC 8 Materials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="amc10-materials.html" class="nav-link">AMC 10 Materials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="syllabus.html" class="nav-link">Syllabus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="past-contests.html" class="nav-link active">Past Contests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Past Contests</h1>
+                <p>Access previous AMC competitions with solutions and explanations</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <div class="contest-filters">
+                    <button class="filter-btn active" onclick="filterContests('all')">All Contests</button>
+                    <button class="filter-btn" onclick="filterContests('amc8')">AMC 8</button>
+                    <button class="filter-btn" onclick="filterContests('amc10')">AMC 10</button>
+                </div>
+
+                <div class="contests-grid">
+                    <div class="contest-card" data-type="amc8">
+                        <div class="contest-header">
+                            <h3>AMC 8 2023</h3>
+                            <span class="contest-date">January 2023</span>
+                        </div>
+                        <p>Complete contest with detailed solutions and explanations for all 25 problems.</p>
+                        <div class="contest-actions">
+                            <a href="#" class="btn btn-primary">View Problems</a>
+                            <a href="#" class="btn btn-secondary">Solutions</a>
+                        </div>
+                    </div>
+
+                    <div class="contest-card" data-type="amc10">
+                        <div class="contest-header">
+                            <h3>AMC 10A 2023</h3>
+                            <span class="contest-date">November 2023</span>
+                        </div>
+                        <p>AMC 10A competition with comprehensive solutions and problem analysis.</p>
+                        <div class="contest-actions">
+                            <a href="#" class="btn btn-primary">View Problems</a>
+                            <a href="#" class="btn btn-secondary">Solutions</a>
+                        </div>
+                    </div>
+
+                    <div class="contest-card" data-type="amc10">
+                        <div class="contest-header">
+                            <h3>AMC 10B 2023</h3>
+                            <span class="contest-date">November 2023</span>
+                        </div>
+                        <p>AMC 10B competition featuring challenging problems and detailed explanations.</p>
+                        <div class="contest-actions">
+                            <a href="#" class="btn btn-primary">View Problems</a>
+                            <a href="#" class="btn btn-secondary">Solutions</a>
+                        </div>
+                    </div>
+
+                    <div class="contest-card" data-type="amc8">
+                        <div class="contest-header">
+                            <h3>AMC 8 2022</h3>
+                            <span class="contest-date">January 2022</span>
+                        </div>
+                        <p>Previous year's AMC 8 contest with step-by-step problem solutions.</p>
+                        <div class="contest-actions">
+                            <a href="#" class="btn btn-primary">View Problems</a>
+                            <a href="#" class="btn btn-secondary">Solutions</a>
+                        </div>
+                    </div>
+
+                    <div class="contest-card" data-type="amc10">
+                        <div class="contest-header">
+                            <h3>AMC 10A 2022</h3>
+                            <span class="contest-date">November 2022</span>
+                        </div>
+                        <p>AMC 10A from 2022 with comprehensive problem analysis and solutions.</p>
+                        <div class="contest-actions">
+                            <a href="#" class="btn btn-primary">View Problems</a>
+                            <a href="#" class="btn btn-secondary">Solutions</a>
+                        </div>
+                    </div>
+
+                    <div class="contest-card" data-type="amc10">
+                        <div class="contest-header">
+                            <h3>AMC 10B 2022</h3>
+                            <span class="contest-date">November 2022</span>
+                        </div>
+                        <p>AMC 10B competition with detailed explanations and problem-solving strategies.</p>
+                        <div class="contest-actions">
+                            <a href="#" class="btn btn-primary">View Problems</a>
+                            <a href="#" class="btn btn-secondary">Solutions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="load-more">
+                    <button class="btn btn-secondary">Load More Contests</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 American Mathematics Competitions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

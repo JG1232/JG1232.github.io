@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload - American Mathematics Competitions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>AMC</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="amc8-materials.html" class="nav-link">AMC 8 Materials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="amc10-materials.html" class="nav-link">AMC 10 Materials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="syllabus.html" class="nav-link">Syllabus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="past-contests.html" class="nav-link">Past Contests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>File Management</h1>
+                <p>Upload and manage AMC materials and handouts</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <div class="upload-section">
+                    <h2>Upload New Files</h2>
+                    <form class="upload-form" action="#" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="file-category">Category:</label>
+                            <select id="file-category" name="category" required>
+                                <option value="">Select Category</option>
+                                <option value="amc8-algebra">AMC 8 - Algebra</option>
+                                <option value="amc8-geometry">AMC 8 - Geometry</option>
+                                <option value="amc8-number-theory">AMC 8 - Number Theory</option>
+                                <option value="amc8-combinatorics">AMC 8 - Combinatorics</option>
+                                <option value="amc10-algebra">AMC 10 - Algebra</option>
+                                <option value="amc10-geometry">AMC 10 - Geometry</option>
+                                <option value="amc10-number-theory">AMC 10 - Number Theory</option>
+                                <option value="amc10-combinatorics">AMC 10 - Combinatorics</option>
+                                <option value="formula-sheets">Formula Sheets</option>
+                                <option value="strategies">Problem-Solving Strategies</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="file-title">File Title:</label>
+                            <input type="text" id="file-title" name="title" required placeholder="e.g., Linear Equations Handout">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="file-description">Description:</label>
+                            <textarea id="file-description" name="description" rows="3" placeholder="Brief description of the file content"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="file-upload">Select File:</label>
+                            <input type="file" id="file-upload" name="file" accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png" required>
+                            <small>Accepted formats: PDF, DOC, DOCX, TXT, JPG, PNG (Max 10MB)</small>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Upload File</button>
+                    </form>
+                </div>
+
+                <div class="file-management">
+                    <h2>Manage Existing Files</h2>
+                    <div class="file-filters">
+                        <button class="filter-btn active" onclick="filterFiles('all')">All Files</button>
+                        <button class="filter-btn" onclick="filterFiles('amc8')">AMC 8</button>
+                        <button class="filter-btn" onclick="filterFiles('amc10')">AMC 10</button>
+                        <button class="filter-btn" onclick="filterFiles('formulas')">Formula Sheets</button>
+                    </div>
+                    
+                    <div class="files-grid" id="files-grid">
+                        <!-- Files will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 American Mathematics Competitions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
